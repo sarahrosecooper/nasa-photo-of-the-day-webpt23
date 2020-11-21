@@ -1,14 +1,19 @@
 import React from "react";
 import "./App.css";
+import Header from "./components/Header/Header";
+import Info from "./components/Info";
+import styled from "styled-components";
 
+const MainDiv = styled.div`
+  margin: 0 auto;
+  max-width: 75%;
+`;
 function App() {
   return (
-    <div className="App">
-      <p>
-        Read through the instructions in the README.md file to build your NASA
-        app! Have fun <span role="img" aria-label='go!'>🚀</span>!
-      </p>
-    </div>
+    <MainDiv className="App">
+      <Header />
+      <Info />
+    </MainDiv>
   );
 }
 

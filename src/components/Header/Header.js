@@ -2,18 +2,21 @@ import React from "react";
 import styled from "styled-components";
 
 const HeaderDiv = styled.div`
-  min-height: 105px;
+  min-height: 10px;
+  max-width: 50%;
   background-color: pink;
   display: flex;
   justify-content: center;
-  margin-bottom: 10px;
+  margin: 0 auto;
+  margin-bottom: 5px;
 `;
 
 const TextDiv = styled.div`
   display: flex;
-  margin-top: 5%;
+  
   font-family: "Times New Roman";
   font-size: 3rem;
+  justify-content: center;
 `;
 const Header = () => {
   return (
